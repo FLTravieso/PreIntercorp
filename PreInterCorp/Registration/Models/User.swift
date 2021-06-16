@@ -6,3 +6,16 @@
 //
 
 import Foundation
+
+struct User {
+    let firstName: String
+    let lastName: String
+    let birthday: Double
+
+    var userRegister: [String : Any] {
+        return ["firstName" : self.firstName,
+                "lastName"  : self.lastName,
+                "birthday"  : self.birthday]
+    }
+    
+}
