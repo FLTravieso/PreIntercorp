@@ -1,15 +1,17 @@
-# Development Enviroment
+# Intercorp Project Challenge
+
+## Development Enviroment
 
 - macOS Big Sure 11.4
 - XCode 12.5
 - Cocoapods 1.10.1
 
-# Setup
+## Setup
 
 - Run `pod install` from terminal
 - Open `PreInterCorp.xcworkspace`
 
-# Intercorp Project Challenge
+## Test
 
 Info to test phone number login:
 
