@@ -9,12 +9,24 @@ import UIKit
 
 class IntercorpChallengeView: UIView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setViews()
+        layoutViews()
     }
-    */
+
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setViews()
+        layoutViews()
+    }
+
+    /// Set your view and its subviews here.
+    func setViews() {
+        backgroundColor = .white
+    }
+
+    /// Layout your subviews here.
+    func layoutViews() {}
 
 }
