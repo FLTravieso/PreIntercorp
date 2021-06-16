@@ -3,15 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		4366E901A8863F921BDA6EF2 /* Pods_PreInterCorp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1B44D7392C6F08190F7992 /* Pods_PreInterCorp.framework */; };
+		6611C848267827370026D986 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6611C847267827370026D986 /* GoogleService-Info.plist */; };
+		6611C84A267855C00026D986 /* SMSLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6611C849267855C00026D986 /* SMSLoginViewController.swift */; };
+		6611C84E26786B440026D986 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6611C84D26786B440026D986 /* RegistrationViewController.swift */; };
+		663C55E32679787E00E31AA9 /* IntercorpChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663C55E22679787E00E31AA9 /* IntercorpChallengeViewController.swift */; };
+		663C55E5267978E000E31AA9 /* IntercorpChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663C55E4267978E000E31AA9 /* IntercorpChallengeView.swift */; };
+		663C55E9267979E200E31AA9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663C55E8267979E200E31AA9 /* LoginView.swift */; };
+		663C55EB26797E5D00E31AA9 /* SMSLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663C55EA26797E5D00E31AA9 /* SMSLoginView.swift */; };
+		663C55F02679841500E31AA9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663C55EF2679841500E31AA9 /* User.swift */; };
+		663C55F22679844B00E31AA9 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663C55F12679844B00E31AA9 /* RegistrationView.swift */; };
+		663C55F526798B7A00E31AA9 /* AuthenticatorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663C55F426798B7A00E31AA9 /* AuthenticatorProvider.swift */; };
 		66CB5B0426778E0000F2D116 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CB5B0326778E0000F2D116 /* AppDelegate.swift */; };
 		66CB5B0626778E0000F2D116 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CB5B0526778E0000F2D116 /* SceneDelegate.swift */; };
-		66CB5B0826778E0000F2D116 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CB5B0726778E0000F2D116 /* ViewController.swift */; };
-		66CB5B0B26778E0000F2D116 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66CB5B0926778E0000F2D116 /* Main.storyboard */; };
+		66CB5B0826778E0000F2D116 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CB5B0726778E0000F2D116 /* LoginViewController.swift */; };
 		66CB5B0D26778E0100F2D116 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66CB5B0C26778E0100F2D116 /* Assets.xcassets */; };
 		66CB5B1026778E0100F2D116 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66CB5B0E26778E0100F2D116 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -19,11 +28,20 @@
 /* Begin PBXFileReference section */
 		046952FEA10CEAD8CCA6391C /* Pods-PreInterCorp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PreInterCorp.release.xcconfig"; path = "Target Support Files/Pods-PreInterCorp/Pods-PreInterCorp.release.xcconfig"; sourceTree = "<group>"; };
 		3313D5151C0BE8C541B84968 /* Pods-PreInterCorp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PreInterCorp.debug.xcconfig"; path = "Target Support Files/Pods-PreInterCorp/Pods-PreInterCorp.debug.xcconfig"; sourceTree = "<group>"; };
+		6611C847267827370026D986 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6611C849267855C00026D986 /* SMSLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSLoginViewController.swift; sourceTree = "<group>"; };
+		6611C84D26786B440026D986 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		663C55E22679787E00E31AA9 /* IntercorpChallengeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntercorpChallengeViewController.swift; sourceTree = "<group>"; };
+		663C55E4267978E000E31AA9 /* IntercorpChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntercorpChallengeView.swift; sourceTree = "<group>"; };
+		663C55E8267979E200E31AA9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		663C55EA26797E5D00E31AA9 /* SMSLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSLoginView.swift; sourceTree = "<group>"; };
+		663C55EF2679841500E31AA9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		663C55F12679844B00E31AA9 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		663C55F426798B7A00E31AA9 /* AuthenticatorProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatorProvider.swift; sourceTree = "<group>"; };
 		66CB5B0026778E0000F2D116 /* PreInterCorp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PreInterCorp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66CB5B0326778E0000F2D116 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66CB5B0526778E0000F2D116 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		66CB5B0726778E0000F2D116 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		66CB5B0A26778E0000F2D116 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		66CB5B0726778E0000F2D116 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		66CB5B0C26778E0100F2D116 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66CB5B0F26778E0100F2D116 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66CB5B1126778E0100F2D116 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,8 +66,85 @@
 				3313D5151C0BE8C541B84968 /* Pods-PreInterCorp.debug.xcconfig */,
 				046952FEA10CEAD8CCA6391C /* Pods-PreInterCorp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		6611C84B267864B30026D986 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				663C55E7267979A600E31AA9 /* Views */,
+				663C55E62679798D00E31AA9 /* Controllers */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		6611C84C267867D80026D986 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				663C55EE2679840400E31AA9 /* Models */,
+				663C55ED267983FB00E31AA9 /* Views */,
+				663C55EC267983EF00E31AA9 /* Controllers */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		663C55E1267975DD00E31AA9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				663C55E22679787E00E31AA9 /* IntercorpChallengeViewController.swift */,
+				663C55E4267978E000E31AA9 /* IntercorpChallengeView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		663C55E62679798D00E31AA9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				66CB5B0726778E0000F2D116 /* LoginViewController.swift */,
+				6611C849267855C00026D986 /* SMSLoginViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		663C55E7267979A600E31AA9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				663C55E8267979E200E31AA9 /* LoginView.swift */,
+				663C55EA26797E5D00E31AA9 /* SMSLoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		663C55EC267983EF00E31AA9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6611C84D26786B440026D986 /* RegistrationViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		663C55ED267983FB00E31AA9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				663C55F12679844B00E31AA9 /* RegistrationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		663C55EE2679840400E31AA9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				663C55EF2679841500E31AA9 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		663C55F326798B6500E31AA9 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				663C55F426798B7A00E31AA9 /* AuthenticatorProvider.swift */,
+			);
+			path = Providers;
 			sourceTree = "<group>";
 		};
 		66CB5AF726778DFF00F2D116 = {
@@ -73,10 +168,13 @@
 		66CB5B0226778E0000F2D116 /* PreInterCorp */ = {
 			isa = PBXGroup;
 			children = (
+				663C55F326798B6500E31AA9 /* Providers */,
+				663C55E1267975DD00E31AA9 /* Common */,
+				6611C84C267867D80026D986 /* Registration */,
+				6611C84B267864B30026D986 /* Login */,
+				6611C847267827370026D986 /* GoogleService-Info.plist */,
 				66CB5B0326778E0000F2D116 /* AppDelegate.swift */,
 				66CB5B0526778E0000F2D116 /* SceneDelegate.swift */,
-				66CB5B0726778E0000F2D116 /* ViewController.swift */,
-				66CB5B0926778E0000F2D116 /* Main.storyboard */,
 				66CB5B0C26778E0100F2D116 /* Assets.xcassets */,
 				66CB5B0E26778E0100F2D116 /* LaunchScreen.storyboard */,
 				66CB5B1126778E0100F2D116 /* Info.plist */,
@@ -152,8 +250,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				66CB5B1026778E0100F2D116 /* LaunchScreen.storyboard in Resources */,
+				6611C848267827370026D986 /* GoogleService-Info.plist in Resources */,
 				66CB5B0D26778E0100F2D116 /* Assets.xcassets in Resources */,
-				66CB5B0B26778E0000F2D116 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,23 +304,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66CB5B0826778E0000F2D116 /* ViewController.swift in Sources */,
+				663C55F526798B7A00E31AA9 /* AuthenticatorProvider.swift in Sources */,
+				663C55F22679844B00E31AA9 /* RegistrationView.swift in Sources */,
+				663C55E5267978E000E31AA9 /* IntercorpChallengeView.swift in Sources */,
+				66CB5B0826778E0000F2D116 /* LoginViewController.swift in Sources */,
 				66CB5B0426778E0000F2D116 /* AppDelegate.swift in Sources */,
+				6611C84A267855C00026D986 /* SMSLoginViewController.swift in Sources */,
+				663C55EB26797E5D00E31AA9 /* SMSLoginView.swift in Sources */,
+				663C55E32679787E00E31AA9 /* IntercorpChallengeViewController.swift in Sources */,
 				66CB5B0626778E0000F2D116 /* SceneDelegate.swift in Sources */,
+				663C55E9267979E200E31AA9 /* LoginView.swift in Sources */,
+				663C55F02679841500E31AA9 /* User.swift in Sources */,
+				6611C84E26786B440026D986 /* RegistrationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		66CB5B0926778E0000F2D116 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				66CB5B0A26778E0000F2D116 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		66CB5B0E26778E0100F2D116 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
