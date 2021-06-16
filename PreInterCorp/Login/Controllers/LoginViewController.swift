@@ -50,13 +50,18 @@ class LoginViewController: IntercorpChallengeViewController<LoginView> {
 
     func authenticate(with credential: AuthCredential) {
         authProvider.authenticate(with: credential) { [weak self] error in
-            guard let self = self,
-                  error == nil else {
-                //Show Error Message
+            guard let self = self else {
                 return
             }
 
-            self.navigateToRegistration()
+            if error != nil {
+                let alert = UIAlertController(title: "Login Error", message: nil, preferredStyle: .alert)
+                let action = UIAlertAction(title: "Ok", style: .default)
+                alert.addAction(action)
+                self.present(alert, animated: true, completion: nil)
+            } else {
+                self.navigateToRegistration()
+            }
         }
     }
 

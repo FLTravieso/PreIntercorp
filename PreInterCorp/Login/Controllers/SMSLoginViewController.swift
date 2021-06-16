@@ -50,14 +50,19 @@ class SMSLoginViewController: IntercorpChallengeViewController<SMSLoginView> {
            !phoneNumber.isEmpty {
             Auth.auth().settings?.isAppVerificationDisabledForTesting = true
             PhoneAuthProvider.provider().verifyPhoneNumber(phoneNumber, uiDelegate: nil) { [weak self] verificationId, error in
-                guard let self = self,
-                      error == nil else {
-                    // Show error message
+                guard let self = self else {
                     return
                 }
 
-                self.verificationId = verificationId
-                self.messageSent = true
+                if error != nil {
+                    let alert = UIAlertController(title: "Phone Number Error", message: nil, preferredStyle: .alert)
+                    let action = UIAlertAction(title: "Ok", style: .default)
+                    alert.addAction(action)
+                    self.present(alert, animated: true, completion: nil)
+                } else {
+                    self.verificationId = verificationId
+                    self.messageSent = true
+                }
             }
         }
     }

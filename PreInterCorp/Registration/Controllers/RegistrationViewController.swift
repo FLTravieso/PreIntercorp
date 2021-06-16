@@ -28,14 +28,17 @@ class RegistrationViewController: IntercorpChallengeViewController<RegistrationV
 
         let user = User(firstName: firstName, lastName: lastName, birthday: self.customView.birthdayPicker.date.timeIntervalSince1970)
         dataBaseRef.child("users").childByAutoId().setValue(user.userRegister) { error,_ in
+            let resultMessage: String
             if error != nil {
-                // Show error message
+                resultMessage = "Error Ocurred"
             } else {
-                let alert = UIAlertController(title: "User Register Successful", message: nil, preferredStyle: .alert)
-                let action = UIAlertAction(title: "Ok", style: .default)
-                alert.addAction(action)
-                self.present(alert, animated: true, completion: nil)
+                resultMessage = "User Register Successful"
             }
+
+            let alert = UIAlertController(title: resultMessage, message: nil, preferredStyle: .alert)
+            let action = UIAlertAction(title: "Ok", style: .default)
+            alert.addAction(action)
+            self.present(alert, animated: true, completion: nil)
         }
     }
 }
