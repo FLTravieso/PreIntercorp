@@ -9,5 +9,7 @@ target 'PreInterCorp' do
 
   pod 'PureLayout'
   pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'FBSDKLoginKit'
 
 end
